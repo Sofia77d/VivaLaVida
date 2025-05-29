@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva La Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Слайд 1 -->
+    <header class="header">
+        <div class="logo-section">
+            <img src="image37.png" alt="Viva La Vida Logo" class="logo">
+        </div>
+        <nav class="nav-menu">
+            <a href="#">Послуги</a>
+            <a href="#">Ціни</a>
+            <a href="#">Сертифікати</a>
+            <a href="#">Майстри</a>
+            <a href="#">Контакти</a>
+            <a href="#">Місто</a>
+        </nav>
+        <div class="right-section">
+            <div class="phones">
+                <div class="phone">+380687531248</div>
+                <div class="phone">+380679534658</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main">
+            <div class="content-box">
+                <div class="content-left">
+                    <h1>Barbershop</h1>
+                    <h2>VIVA LA VIDA</h2>
+                    <ul>
+                        <li>Мінімалізм, стиль, зручність</li>
+                        <li>Швидкий запис</li>
+                        <li>Топові майстри, чоловіча естетика</li>
+                    </ul>
+                    <a href="#signupModal" class="button"> Записатися</a>
+                </div>
+                <div class="content-right">
+                    <img src="image35.png">
+                </div>
+            </div>
+        </div>
+</main>
+
+<section id="signupModal" class="modal">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close" onclick="location.hash=''; return false;">×</button>
+    <form action="appointment_feedback.php" method="post">
+      <h2>Контакти для запису:</h2>
+      <label for="fullname">Прізвище та ім’я</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+      <label for="phone">Номер телефону:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      <label for="story">Напишіть, на яку ви дату хочете записатись:</label><br>
+<textarea id="story" name="story" rows="5" cols="33">
+</textarea>
+      <h3>Виберіть вид послуг:</h3>
+      <label><input type="radio" name="service" value="mens_haircut" required> Чоловіча стрижка</label><br>
+      <label><input type="radio" name="service" value="beard_trim" required> Стрижка бороди</label><br>
+      <label><input type="radio" name="service" value="mustache_trim" required> Стрижка вусів</label><br>
+      <label><input type="radio" name="service" value="royal_shave" required> Королівське гоління</label><br>
+      <label><input type="radio" name="service" value="kids_haircut" required> Дитяча стрижка &lt;12</label><br>
+      <label><input type="radio" name="service" value="styling" required> Укладання Волосся</label><br>
+      <label><input type="radio" name="service" value="camouflage" required> Камуфляжна сивина гоління</label><br><br>
+
+      <input type="submit" value="Записатись">
+    </form>
+  </div>
+</section>
+
+<div class="hamburger-menu">
+  <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+
+  <ul class="menu__box">
+    <li><a class="menu__item" href="#about">Про нас</a></li>
+    <li><a class="menu__item" href="#why">Чому ми</a></li>
+    <li><a class="menu__item" href="#services">Послуги</a></li>
+    <li><a class="menu__item" href="#prices">Ціни</a></li>
+    <li><a class="menu__item" href="#certificates">Сертифікати</a></li>
+    <li><a class="menu__item" href="#masters">Майстри</a></li>
+    <li><a class="menu__item" href="#contacts">Контакти</a></li>
+    <li><a class="menu__item" href="#locations">Місто</a></li>
+  </ul>
+</div>
+
+  <!-- Слайд 2 -->
+  <section id="about">
+<section class="about-us">
+  <div class="about-left">
+    <img src="image21.png" alt="Small Image 1" class="small-img">
+    <img src="image9.png" alt="Small Image 2" class="small-img">
+  </div>
+  <div class="about-right">
+    <img src="image20.png" alt="Large Image" class="large-img">
+    <div class="about-text-block">
+      <h2>Про нас</h2>
+      <p>
+        Ми – команда професіоналів, яка створює ідеальний чоловічий стиль. Наші майстри підкреслять вашу індивідуальність, пропонуючи сучасні стрижки, бездоганне гоління та догляд за бородою.<br><br>
+        У нас ви не лише оновите свій образ, але й відчуєте справжній чоловічий відпочинок у затишній атмосфері.<br><br>
+        Кожен візит до нас – це можливість відчути себе впевненіше та насолодитися якісним сервісом. Ми знаємо, як важливо виглядати стильно, тому дбаємо про кожну деталь вашого образу.
+      </p>
+    </div>
+  </div>
+</section>
+</section>
+
+    <!-- Слайд 3 -->
+    <section id="why">
+    <section class="why-us">
+        <div class="why-text">
+            <h2>Чому ми</h2>
+            <p>Ми створюємо унікальну атмосферу, де стиль поєднується з майстерністю та комфортом. Наші барбери спеціалізуються на чоловічих стрижках та догляді за бородою, гарантуючи індивідуальний підхід до кожного клієнта. Використовуючи професійне обладнання та якісні засоби, ми забезпечуємо високий рівень обслуговування. Обираючи нас, ви долучаєтеся до джентльменської традиції та отримуєте досвід, який хочеться повторити.</p>
+
+        </div>
+    </section>
+</section>
+
+    <!-- Слайд 4 -->
+<section id="services">
+    <section class="services">
+        <h2>Послуги</h2>
+        <img src="image21.png" alt="Scissors Top Right">
+        <img src="image22(1).png" alt="Scissors Bottom Left">
+        <div class="services-container">
+            <div class="service-row">
+                <div class="service">
+                    <p>Чоловіча стрижка</p>
+                    <p>Класичні та сучасні зачіски</p>
+                </div>
+                <div class="service">
+                    <p>Стрижка бороди</p>
+                    <p>Формування форми, підрівнювання та догляд</p>
+                </div>
+                <div class="service">
+                    <p>Стрижка вусів</p>
+                    <p>Корекція форми, підрівнювання та стильний фініш</p>
+                </div>
+                <div class="service">
+                    <p>Гоління небезпечною стрижкою</p>
+                    <p>Гладке гоління з використання гарячих рушників</p>
+                </div>
+            </div>
+            <div class="service-row">
+                <div class="service">
+                    <p>Дитяча стрижка <12</p>
+                    <p>Акуратний, стильний та комфортний образ</p>
+                </div>
+                <div class="service">
+                    <p>Камуфлювання сивини</p>
+                    <p>Легке тонування для натурального вигляду</p>
+                </div>
+                <div class="service">
+                    <p>Гоління небезпечною стрижкою</p>
+                    <p>Гладке гоління з використання гарячих рушників</p>
+                </div>
+                <div class="service">
+                    <p>Укладання волосся</p>
+                    <p>Формування зачіски з використанням професійних засобів</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Слайд 5 -->
+<section id="prices">
+    <section class="prices">
+         <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="video.mp4.mp4" type="video/mp4" />
+    </video>
+  </div>
+        <div class="prices-text">
+            <h2>Prices</h2>
+        </div>
+            <div class="price-list">
+                <div class="price-item">
+                    <p>Чоловіча стрижка</p>
+                    <p>500</p>
+                </div>
+                <div class="price-item">
+                    <p>Стрижка бороди</p>
+                    <p>300</p>
+                </div>
+                <div class="price-item">
+                    <p>Стрижка вусів</p>
+                    <p>200</p>
+                </div>
+                <div class="price-item">
+                    <p>Королівське гоління</p>
+                    <p>500</p>
+                </div>
+                <div class="price-item">
+                    <p>Дитяча стрижка <12</p>
+                    <p>350</p>
+                </div>
+               <div class="price-item">
+                    <p>Укладання Волосся</p>
+                    <p>200</p>
+                </div>
+                <div class="price-item">
+                    <span>Камуфляжна сивина гоління</span>
+                    <span>450</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Слайд 6 -->
+<section id="certificates">
+  <h2 class="cert-title">Certificates</h2>
+  <div class="cert-container">
+
+    <div class="cert-card dark">
+      <p class="cert-text-main">Подарунковий сертифікат на любу послугу</p>
+      <p class="cert-text-sub">Сертифікат на косметику або доглядові засоби</p>
+      <p class="cert-price">500, 1000, 2000</p>
+      <button class="cert-button">Купити</button>
+    </div>
+
+    <div class="cert-card light">
+      <p class="cert-text-main dark-text">Barber pro level</p>
+      <p class="cert-text-sub dark-text">Барбершоп - курси</p>
+      <p class="cert-price dark-text">10000</p>
+      <button class="cert-button">Купити</button>
+    </div>
+
+    <div class="cert-card dark">
+      <p class="cert-text-main">Стрижка бороди та вусів</p>
+      <p class="cert-text-sub">Брутальний день для нього</p>
+      <p class="cert-price">500, 750</p>
+      <button class="cert-button">Купити</button>
+    </div>
+    
+  </div>
+</section>
+
+
+    <!-- Слайд 7 -->
+<section id="masters">
+    <section class="masters">
+        <h2>Майстри</h2>
+        <div class="masters-container">
+            <div class="masters-left">
+                <div class="master">
+                    <img src="image27.png" alt="Master 1" class="master-image">
+                    <h3>Владислав Романенко</p>
+                    <p>Професіонал у голінні небезпечною бритвою</p>
+                </div>
+                <div class="master">
+                    <img src="image28.png" alt="Master 2" class="master-image">
+                    <h3>Олександр Савчук</p>
+                    <p>Експерт з фрейду та оформлення бороди</p>
+                </div>
+            </div>
+            <div class="masters-right">
+                <div class="master">
+                    <img src="image26.png" alt="Master 3" class="master-image">
+                    <h3>Дмитро Сеньців</p>
+                    <p>Майстер креативних зачісок, завжди в курсі трендів</p>
+                </div>
+                <div class="master">
+                    <img src="image24.png" alt="Master 4" class="master-image">
+                    <h3>Артем Щур</p>
+                    <p>Спеціаліст із класичних чоловічих стрижок</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+    <!-- Слайд 8 -->
+<section id="locations">
+    <section class="locations">
+        <h2>Місто</h2>
+        <div class="locations-container">
+            <div class="location">
+                <h4>Barbershop №1</h4>
+                <p>м. Львів</p>
+                <p>TU TrendZone</p>
+                <p>вул. Кобилянської, 12</p>
+                <p>+380694853678</p>
+                <p>+380697613459</p>
+            </div>
+            <div class="location">
+                <h4>Barbershop №2</h4>
+                <p>м. Тернопіль</p>
+                <p>ЖK Style</p>
+                <p>вул. Шпитальна, 28</p>
+                <p>+38064563215</p>
+                <p>+38069753698</p>
+            </div>
+            <div class="location">
+                <h4>Barbershop №3</h4>
+                <p>м. Київ</p>
+                <p>ТЦ Buy&Go</p>
+                <p>вул. Володимирівська, 75</p>
+                <p>+380456982395</p>
+                <p>+380975612344</p>
+            </div>
+        </div>
+    </section>
+</section>
+    <!-- Слайд 9 -->
+<section id="contacts">
+    <section class="contact">
+        <div class="contact-box">
+            <div class="contact-header">
+            <h2>Контакти</h2>
+            <img src="image19.png" alt="Scissors">
+        </div>
+        <div class="contact-it">
+            <p>Написати нам:</p>
+            <div class="contact-icons">
+                <a href="https://web.telegram.org/k/" target="_blank"><img src="TelegramApp.png" alt="Telegram"> </a>
+            </div>
+        </div>
+        <div class="contact-ite">
+            <p>Слідкуйте за нами:</p>
+            <div class="contact-icons">
+                <a href ="https://www.instagram.com/" target="_blank"><img src="Instagram.png" alt="Instagram" > </a>
+                <a href="https://www.facebook.com/?locale=uk_UA&_rdr" target="_blank"><img src="Facebook(1).png" alt="Facebook"> </a>
+            </div>
+        </div>
+        <div class="contact-item">
+            <p>Графік роботи:</p>
+            <p>пн-нд (10:00-20:00)</p>
+        </div>
+    </div>
+</section>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
